@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre Contacto"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:id="@+id/edtNombre"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_registro"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Type something here"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="38dp"
+        android:textSize="18dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Telefono"
+        android:textSize="30dp"
+        android:layout_marginTop="83dp"/>
+    <EditText
+        android:id="@+id/edtTelefono"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtNombre"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Type something here"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grupo"
+        android:textSize="30dp"
+        android:layout_marginTop="200dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_seleccion_grupo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtTelefono"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="30dp"
+
+        android:entries="@array/spinner_items"/>
+
+    <LinearLayout
+        android:layout_below="@+id/spinner_seleccion_grupo"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="150dp"
+        android:text="Guardar" />
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_seleccion_grupo"
+
+            android:text="Cancelar" />
+    </LinearLayout>
+
+
+</RelativeLayout>
